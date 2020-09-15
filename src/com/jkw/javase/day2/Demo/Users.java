@@ -13,10 +13,12 @@ public class Users {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
@@ -26,5 +28,12 @@ public class Users {
 
     public void setOrdernum(String ordernum) {
         this.ordernum = ordernum;
+    }
+    public void downorder(Order o1){
+        System.out.println("用户姓名:"+name);
+        System.out.println("订单号:"+ordernum);
+        System.out.println("-----------------------------------------------");
+        System.out.println("订单信息为：");
+        o1.thingshow();
     }
 }

@@ -1,25 +1,36 @@
 package com.jkw.javase.day2.Demo;
 
 public class Order {
-    private String thing;
-    private int
-
     private Goods[] goods;
+    private String num;
 
     public Order() {
     }
 
-    public Order(String thing) {
-        this.thing = thing;
+    public Order(Goods[] goods) {
+        this.goods = goods;
     }
 
-    public String getThing() {
-        return thing;
+    public String getNum() {
+        return num;
     }
 
-    public void setThing(String thing) {
-        this.thing = thing;
+    public void setNum(String num) {
+        this.num = num;
     }
-    public void observe
+
+    public Goods[] getGoods() {
+        return goods;
+    }
+
+    public void setGoods(Goods[] goods) {
+        this.goods = goods;
+    }
+
+    public void thingshow(){
+        for(int i =0;i<goods.length;i++){
+                goods[i].show();
+        }
+    }
 
 }
